@@ -1,36 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "speedy",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Speedy",
+  "description": "A mod that adds /speed command.",
   "authors": [
-    "Me!"
+    "WerySkok"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://weryskok.ru/",
+    "sources": "https://github.com/WerySkok/speedy-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0",
+  "icon": "assets/speedy/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "ru.weryskok.speedy.SpeedyMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "speedy.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.11",
-    "fabric-api": "*",
-    "minecraft": "~1.19.3",
-    "java": ">=17"
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17",
+    "fabric-permissions-api-v0": "*"
   },
   "suggests": {
     "another-mod": "*"
