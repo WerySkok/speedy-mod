@@ -9,6 +9,7 @@ import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.text.LiteralText;
 
 import static com.mojang.brigadier.arguments.FloatArgumentType.floatArg;
 import static com.mojang.brigadier.arguments.StringArgumentType.word;
@@ -57,6 +58,8 @@ public final class SpeedCommand {
             player.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.1f * speed);
         }
         player.sendAbilitiesUpdate();
+
+        source.sendFeedback(new LiteralText(String.format("Set %s's %s speed to %.2f.", player.getName().getString(), type.equals("flight") ? "flight" : "walking", speed)), false);
 
         return 0;
     }
