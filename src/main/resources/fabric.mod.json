@@ -22,9 +22,6 @@
       "ru.weryskok.speedy.SpeedyMod"
     ]
   },
-  "mixins": [
-    "speedy.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.14.11",
@@ -32,8 +29,5 @@
     "minecraft": "~1.18.2",
     "java": ">=17",
     "fabric-permissions-api-v0": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
