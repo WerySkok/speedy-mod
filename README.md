@@ -1,6 +1,6 @@
 # Speedy Mod
 
-Simple serverside mod for Fabric 1.18.2 that adds ``/speed`` command.
+Simple serverside mod for Fabric 1.19.2 that adds ``/speed`` command.
 
 Usage:
 ```
@@ -13,4 +13,4 @@ This mod includes [fabric-permissions-api](https://github.com/lucko/fabric-permi
 
 **This mod was made for [Minecraft Urban Railway Server](https://murs-mc.ru) that is aimed at the post-Soviet construction and European architecture. Make sure to check it out!**
 
-[![wf](https://wiki.murs-mc.ru/w/images/thumb/4/43/MURS_Logo_Rounded.png/150px-MURS_Logo_Rounded.png "MURS Logo")](https://murs-mc.ru)
+[![wf](ttps://wiki.murs-mc.ru/w/images/thumb/5/5a/MURS_Blue_logo_with_background.png/155px-MURS_Blue_logo_with_background.png "MURS Logo")](https://murs-mc.ru)
